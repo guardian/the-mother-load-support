@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="." target="_blank">
+    <title></title>
+</head>
+
+<body style="padding: 0px; margin: 0px; overflow: hidden;"> 
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <link href="https://interactive.guim.co.uk/gia/fonts/v1/fonts.css" rel="stylesheet" type="text/css">
+    <style>
+        html {
+            overflow: auto;
+        }
+
+        .wrapper {
+            padding: 0;
+            border: 0;
+            margin: 0 auto;
+            max-width: 620px;
+        }
+
+        .header {
+            position: relative;
+            color: #333;
+            padding: 7px 0px 16px 0px;
+        }
+
+        .header:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 140px;
+            height: 3px;
+            background-color: #fb0;
+        }
+
+        h1 {
+            font-family: 'Guardian Egyptian Web', Georgia, serif;
+            font-size: 18px;
+            line-height: 1.1;
+            margin: 0;
+            font-weight: 900;
+            color: #333;
+        }
+
+        .image {
+            width: 100%;
+            height: 0;
+            padding-top: 60%;
+            background-image: url('https://interactive.guim.co.uk/embed/2017/12/the-mother-load/bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            margin-bottom: 3px;
+        }
+
+        @media screen and (min-width: 360px) {
+            .image {
+                padding-top: 200px;
+                background-position: center top;
+            }
+        }
+
+        .content {
+            padding-top: 3px;
+            margin: 0;
+            font-family: 'Guardian Text Sans Web', sans-serif;
+            padding: 4px 0 12px;
+        }
+
+        .description {
+            margin-top: 12px;
+            font-family: 'Guardian Text Egyptian Web';
+            font-size: 14px;
+            line-height: 1.4;
+            margin-bottom: 0px;
+        }
+
+        .description__rule {
+            width: 140px;
+            height: 1px;
+            background-color: #dfdfdf;
+            margin-bottom: 4px;
+        }
+
+        .description em {
+            margin-top: 12px;
+            display: block;
+        }
+
+        .description a {
+            color: #333;
+            border-bottom: 1px solid #fb0;
+            text-decoration: none;
+        }
+
+        .description a:hover {
+            color: #fb0;
+        }
+
+        .count {
+            font-family: 'Guardian Egyptian Web';
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 1.1;
+            color: #333;
+            display: block;
+        }
+
+        .count-label {
+            font-family: 'Guardian Text Egyptian Web';
+            font-size: 14px;
+            line-height: 1.4;
+            display: block;
+        }
+
+        .progress {
+            width: 100%;
+            height: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.1);
+            position: relative;
+            margin-top: 6px;
+        }
+
+        .filled-progress {
+            background-color: #fb0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transform: translateX(-100%);
+            transition: transform 3s cubic-bezier(0.25, 0.55, 0.2, 0.85);
+        }
+
+        .progress-labels {
+            position: relative;
+            width: 100%;
+            height: 16px;
+        }
+
+        .label {
+            font-family: 'Guardian Text Sans Web';
+            font-size: 14px;
+            color: #676767;
+            position: absolute;
+            top: 5px;
+        }
+
+        .label--goal {
+            right: 0;
+        }
+
+        @media screen and (max-width: 240px) {
+            .hide-when-small {
+                display: none !important;
+            }
+        }
+
+        @media screen and (min-width: 240px) {
+            .hide-when-big {
+                display: none !important;
+            }
+        }
+
+        a.button {
+            font-family: 'Guardian Text Sans Web';
+            text-decoration: none;
+            font-size: 14px;
+            border-radius: 16px;
+            padding: 8px 34px 7px 7px;
+            background-color: #fb0;
+            background-repeat: no-repeat;
+            background-position: right 3px center;
+            background-image: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path fill='#333' d='M22.8 14.6l-7.6-7.6-.7.7 5.5 6.6h-14v1.5h14l-5.5 6.6.7.7 7.6-7.6v-.9'/></svg>");
+            color: #333;
+            display: inline-block;
+            margin-top: 10px;
+            margin-right: 4px;
+            transition: background 0.2s ease-out;
+        }
+
+        a.button:hover {
+            background-color: #ffce47;
+            background-position: right 0px center;
+        }
+    </style>
+
+    <div class="wrapper">
+        <div class='header'>
+            <h1>The Mother Load</h1>
+        </div>
+        <div class='image'>
+        </div>
+        <div class="content">
+            <div class='goal'>
+                <span class='count'>$0</span>
+                <span class='count-label'>raised so far</span>
+<!--
+                <div class='progress'>
+                    <div class='filled-progress'></div>
+                </div>
+                <div class='progress-labels'>
+                    <span class='label label--first'>$0</span>
+                    <span class='label label--goal'></span>
+                </div>
+-->
+            </div>
+
+            <div class='description'>
+                <div class='description__rule'></div>
+                America is failing mothers, but it doesn’t have to be this way. The Guardian is seeking contributions to fund our in-depth series, <a href='https://www.theguardian.com/us-news/series/the-mother-load' target='_parent'>the Mother Load</a>, exploring why it’s harder to be a mother in the US than in any other developed country – and what we can do about it. 
+            </div>
+
+            <a target="_parent" class="button hide-when-small js-acquisition-link" href="https://contribute.theguardian.com?INTCMP=us_mother_load_campaign_2017">Make a contribution</a>
+            <a target="_parent" class="button hide-when-big js-acquisition-link" href="https://contribute.theguardian.com?INTCMP=us_mother_load_campaign_2017">Contribute</a>
+        </div>
+    </div>
+
+    <script src="https://interactive.guim.co.uk/libs/iframe-messenger/0.2.10/iframeMessenger.js"></script>
+    <script src="https://interactive.guim.co.uk/libs/acquisition-iframe-tracking/0.0.1/index.bundle.js"></script>
+    <script type='text/javascript'>
+        iframeMessenger.enableAutoResize();
+
+        Acquisitions.enrichLinks({
+            componentId: 'embed',
+            componentType: Acquisitions.componentTypes.EPIC,
+            campaignCode: 'us_mother_load_campaign_2017',
+        })
+    </script>
+
+    <script type='text/javascript'>
+        var count = 0,
+        interval,
+        goal,
+        total;
+
+        function init() {
+            getData();
+        }
+
+        function getData() {
+            loadJSON("https://interactive.guim.co.uk/docsdata-test/1eqPaO_nN2E_V34FXe4BOQ85M5Sa8IrAWL8c4A9jMqB4.json", function(data) {
+                showCount = data.sheets.Sheet1[0].showCount === 'TRUE' ? true : false;
+                total = parseInt(data.sheets.Sheet1[0].total);
+                goal = parseInt(data.sheets.Sheet1[0].goal);
+
+                if (showCount) {
+//                     populateText();
+
+                    setTimeout(function() {
+                        animateCount();
+//                         animateBar();
+                    }, 500);
+                }
+            });
+        }
+
+        function loadJSON(path, success, error) {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        if (success)
+                            success(JSON.parse(xhr.responseText));
+                    } else {
+                        if (error)
+                            error(xhr);
+                    }
+                }
+            };
+            xhr.open("GET", path, true);
+            xhr.send();
+        }
+
+        function populateText() {
+            document.getElementsByClassName('label--goal')[0].innerHTML = '$' + toK(goal) + ' <span class=\'hide-when-small\'>goal</span>';
+        }
+
+        function toK(val) {
+            return val / 1000 + 'K';
+        }
+
+        function animateCount() {
+            if (interval === undefined) {
+                interval = setInterval(increaseCounter, 30);
+            }
+        }
+
+        function increaseCounter() {
+            count += Math.floor(total / 100);
+            document.getElementsByClassName('count')[0].innerHTML = "$" + count.toLocaleString();
+
+            if (count >= total) {
+                clearInterval(interval);
+                document.getElementsByClassName('count')[0].innerHTML = "$" + total.toLocaleString();
+            }
+        }
+
+        function animateBar() {
+            document.getElementsByClassName('filled-progress')[0].style.transform = 'translateX(' + percentageTotalAsNegative() + '%)';
+        }
+
+        function percentageTotalAsNegative() {
+            var percentage = total / goal * 100 - 100;
+
+            if (percentage > 0) {
+                percentage = 0;
+            }
+
+            return percentage;
+        }
+
+        init();
+    </script>
+</body>
