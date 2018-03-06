@@ -9,8 +9,33 @@
 
 <body style="padding: 0px; margin: 0px; overflow: hidden;"> 
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-    <link href="https://interactive.guim.co.uk/gia/fonts/v1/fonts.css" rel="stylesheet" type="text/css">
     <style>
+        @font-face {
+            font-family: 'Guardian Egyptian Web';
+            src: url("https://interactive.guim.co.uk/fonts/guss-webfonts/GHGuardianHeadline/GHGuardianHeadline-Bold.woff2") format("woff2"), url("https://interactive.guim.co.uk/fonts/guss-webfonts/GHGuardianHeadline/GHGuardianHeadline-Bold.woff") format("woff"), url("https://interactive.guim.co.uk/fonts/guss-webfonts/GHGuardianHeadline/GHGuardianHeadline-Bold.ttf") format("truetype");
+            font-weight: 900;
+            font-style: normal;
+            font-stretch: normal;
+        }
+
+        @font-face{
+            font-family: 'Guardian Text Sans Web';
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            src: url('https://interactive.guim.co.uk/gia/fonts/v1/fonts/TextSans-Regular.eot');
+            src: url('https://interactive.guim.co.uk/gia/fonts/v1/fonts/TextSans-Regular.eot?#iefix') format('embedded-opentype'), url('https://interactive.guim.co.uk/gia/fonts/v1/fonts/TextSans-Regular.woff') format('woff'), url('https://interactive.guim.co.uk/gia/fonts/v1/fonts/TextSans-Regular.ttf') format('truetype'), url('https://interactive.guim.co.uk/gia/fonts/v1/fonts/TextSans-Regular.svg#TextSans-Regular') format('svg');
+        }
+
+        @font-face{
+            font-family: 'Guardian Text Egyptian Web';
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            src: url('https://interactive.guim.co.uk/gia/fonts/v1/fonts/WebEgyptianHinted-Regular.eot');
+            src: url('https://interactive.guim.co.uk/gia/fonts/v1/fonts/WebEgyptianHinted-Regular.eot?#iefix') format('embedded-opentype'), url('https://interactive.guim.co.uk/gia/fonts/v1/fonts/WebEgyptianHinted-Regular.woff') format('woff'), url('https://interactive.guim.co.uk/gia/fonts/v1/fonts/WebEgyptianHinted-Regular.ttf') format('truetype'), url('https://interactive.guim.co.uk/gia/fonts/v1/fonts/WebEgyptianHinted-Regular.svg#Guardian Text Egyptian Web') format('svg');
+        }
+
         html {
             overflow: auto;
         }
@@ -83,7 +108,6 @@
         }
 
         .description {
-            margin-top: 12px;
             font-family: 'Guardian Text Egyptian Web';
             font-size: 14px;
             line-height: 1.4;
@@ -185,35 +209,17 @@
 
     <div class="wrapper">
         <div class='header'>
-            <h1>America is failing mothers. Help us change that.</h1>
+            <h1>Thank you to our readers for supporting The Mother Load</h1>
         </div>
         <div class='image'>
         </div>
         <div class="content">
-            <div class='goal'>
-                <span class='count'>$0</span>
-                <span class='count-label'>raised so far</span>
-
-<!--
-                <div class='progress'>
-                    <div class='filled-progress'></div>
-                </div>
-                <div class='progress-labels'>
-                    <span class='label label--first'>$0</span>
-                    <span class='label label--goal'></span>
-                </div>
--->
-
-            </div>
 
             <div class='description'>
-                <div class='description__rule'></div>
-                The Guardian’s new series, <a href='https://www.theguardian.com/us-news/series/the-mother-load' target='_parent'>the Mother Load</a>, explores why it’s harder to be a mother in the US than in any other developed country. From shamefully short maternity leave to crushing childcare costs, from rising maternal death rates to an uneven division of household chores, we’ll use the Guardian's global perspective to illustrate how America is an outlier – and find solutions.<br /><br />
-
-                This struggle needs more visibility – and you can help. We’re asking our readers to fund a four-month reporting project to build community and inspire activism. Together, we can force change.
+                This article on the challenges facing mothers in America today was made possible through our readers’ generous financial support. If you were one of the many people who supported <a href='https://www.theguardian.com/us-news/series/the-mother-load' target='_parent'>The Mother Load</a>, thank you. The Guardian is dedicated to covering underexplored issues and bringing them to the public’s attention. In a challenging commercial landscape, we are increasingly funded by our readers. If you can, please support our ongoing independent journalism. 
             </div>
 
-            <a target="_parent" class="button js-acquisition-link" href="https://contribute.theguardian.com?INTCMP=us_mother_load_campaign_2017">Make a contribution</a>
+            <a target="_parent" class="button js-acquisition-link" href="https://contribute.theguardian.com/us?acquisitionData=%7B%22componentType%22%3A%22ACQUISITIONS_THANK_YOU_EPIC%22%2C%22source%22%3A%22GUARDIAN_WEB%22%2C%22campaignCode%22%3A%22us_mother_load_campaign_2017%22%2C%22componentId%22%3A%22us_mother_load_campaign_2017_thank_you_epic%22%7D&INTCMP=us_mother_load_campaign_2017">Support the Guardian</a>
         </div>
     </div>
 
@@ -221,12 +227,6 @@
     <script src="https://interactive.guim.co.uk/libs/acquisition-iframe-tracking/0.0.2/index.bundle.js"></script>
     <script type='text/javascript'>
         iframeMessenger.enableAutoResize();
-
-        Acquisitions.enrichLinks({
-            componentId: 'gdnwb_epic_us_mother_load_campaign_2017',
-            componentType: Acquisitions.componentTypes.EPIC,
-            campaignCode: 'us_mother_load_campaign_2017',
-        })
     </script>
 
     <script type='text/javascript'>
@@ -311,6 +311,6 @@
             return percentage;
         }
 
-        init();
+        // init();
     </script>
 </body>
